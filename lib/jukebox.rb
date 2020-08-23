@@ -20,6 +20,11 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   song = gets.chomp
+  if song_array.include?(song) 
+    puts "Playing #{song}"
+  elsif song.to_i > 0 && song.to_i <= song_array.length
+    puts "Playing #{song_array[song.to_i - 1]}"
+  end
   # song_num = 0
   # x = Integer(song) rescue false
   # if x
@@ -37,11 +42,7 @@ def play(song_array)
   #     song_string = song
   #   end
   # end
-  if song_array.include?(song) 
-    puts "Playing #{song_string}"
-  elsif song.to_i > 0 && song.to_i <= song_array.length
-    puts "Playing #{song_array[song.to_i - 1]}"
-  end
+  
 end
 
 def list(song_array)
