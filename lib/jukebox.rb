@@ -45,7 +45,6 @@ def play(song_array)
 end
 
 def list(song_array)
-  binding.pry
   song_num = 1
   iterator = 0;
   while iterator < song_array.length do
