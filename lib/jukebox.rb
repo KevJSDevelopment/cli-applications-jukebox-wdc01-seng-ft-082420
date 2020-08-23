@@ -8,6 +8,7 @@
  
 #puts say_hello(users_name)
 require 'pry'
+require 'lib/jukebox.rb'
 
 def help 
   puts "I accept the following commands:"
@@ -64,8 +65,10 @@ def run
   puts "Please enter a command:"
   user_input = gets.strip
   while user_input != "exit" do
+    user_input = gets.strip
     if user_input == "list"
       help
     elsif user_input == "play"
-      play()
+      play(songs)
+    elsif user_input == ""
 end
