@@ -8,7 +8,7 @@
  
 #puts say_hello(users_name)
 require 'pry'
-require 'bin/jukebox'
+
 def help 
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -60,7 +60,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
   while user_input != "exit" do
