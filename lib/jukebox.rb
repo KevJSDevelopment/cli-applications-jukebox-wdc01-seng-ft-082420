@@ -20,23 +20,23 @@ end
 def play(song_array)
   puts "Please enter a song name or number:"
   song = gets.chomp
-  song_num = 0
-  x = Integer(song) rescue false
-  if x
-    song_num = song.to_i
-  else
-    song_string = song
-  end
-  while song_num < 1 || song_num > song_array.length || song_string == song && !song_array.include?(song_string) do
-    puts "Invalid input, please try again"
-    song = gets.chomp
-    x = Integer(song) rescue false
-    if x
-      song_num = song.to_i
-    else
-      song_string = song
-    end
-  end
+  # song_num = 0
+  # x = Integer(song) rescue false
+  # if x
+  #   song_num = song.to_i
+  # else
+  #   song_string = song
+  # end
+  # while song_num < 1 || song_num > song_array.length || song_string == song && !song_array.include?(song_string) do
+  #   puts "Invalid input, please try again"
+  #   song = gets.chomp
+  #   x = Integer(song) rescue false
+  #   if x
+  #     song_num = song.to_i
+  #   else
+  #     song_string = song
+  #   end
+  # end
   if song_array.include?(song_string) 
     puts "Playing #{song_string}"
   elsif song.to_i > 0 && song.to_i <= song_array.length
