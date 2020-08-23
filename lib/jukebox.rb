@@ -37,7 +37,7 @@ def play(song_array)
   #     song_string = song
   #   end
   # end
-  if song_array.include?(song_string) 
+  if song_array.include?(song) 
     puts "Playing #{song_string}"
   elsif song.to_i > 0 && song.to_i <= song_array.length
     puts "Playing #{song_array[song.to_i - 1]}"
