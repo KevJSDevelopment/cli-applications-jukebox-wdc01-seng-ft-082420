@@ -24,6 +24,8 @@ def play(song_array)
     puts "Playing #{song}"
   elsif song.to_i > 0 && song.to_i <= song_array.length
     puts "Playing #{song_array[song.to_i - 1]}"
+  else
+    puts ""
   end
   # song_num = 0
   # x = Integer(song) rescue false
