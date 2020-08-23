@@ -59,20 +59,3 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
-
-def run
-  puts "Please enter a command:"
-  user_input = gets.strip
-  while user_input != "exit" do
-    user_input = gets.strip
-    if user_input == "list"
-      list
-    elsif user_input == "play"
-      play
-    elsif user_input == "help"
-      help
-    elsif user_input == "exit"
-      exit_jukebox
-    end
-  end
-end
