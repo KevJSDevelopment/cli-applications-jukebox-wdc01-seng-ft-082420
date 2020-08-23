@@ -27,24 +27,6 @@ def play(song_array)
   else
     puts "Invalid input, please try again"
   end
-  # song_num = 0
-  # x = Integer(song) rescue false
-  # if x
-  #   song_num = song.to_i
-  # else
-  #   song_string = song
-  # end
-  # while song_num < 1 || song_num > song_array.length || song_string == song && !song_array.include?(song_string) do
-  #   puts "Invalid input, please try again"
-  #   song = gets.chomp
-  #   x = Integer(song) rescue false
-  #   if x
-  #     song_num = song.to_i
-  #   else
-  #     song_string = song
-  #   end
-  # end
-  
 end
 
 def list(song_array)
