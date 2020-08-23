@@ -66,9 +66,9 @@ def run
   while user_input != "exit" do
     user_input = gets.strip
     if user_input == "list"
-      list(songs)
+      list
     elsif user_input == "play"
-      play(songs)
+      play
     elsif user_input == "help"
       help
     elsif user_input == "exit"
