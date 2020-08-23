@@ -8,7 +8,6 @@
  
 #puts say_hello(users_name)
 require 'pry'
-require 'lib/jukebox.rb'
 
 def help 
   puts "I accept the following commands:"
